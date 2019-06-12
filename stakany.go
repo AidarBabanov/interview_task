@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/url"
 	"strconv"
@@ -73,6 +72,6 @@ func main() {
 		}
 		msg.FindBests()
 		bests, _ := json.Marshal(msg.Bests)
-		fmt.Println(string(bests))
+		log.Println(string(bests))
 	}
 }
